@@ -5,7 +5,7 @@
 ---
 
 AddEventHandler('onClientResourceStart', function(resourceName)
-    if GetCurrenResourceName() ~= resourceName then return end
+    if GetCurrentResourceName() ~= resourceName then return end
 
     ExtendWorldBoundaryForPlayer(Config.Min.x, Config.Min.y, Config.Min.z)
     ExtendWorldBoundaryForPlayer(Config.Max.x, Config.Max.y, Config.Max.z)
